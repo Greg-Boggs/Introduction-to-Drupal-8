@@ -22,128 +22,127 @@
 <body data-duration="144000">
 
 <header id="intro" class="slide">
-	<h1>The State of Static</h1>
-
-    <p>Not just for prototypes anymore.</p>
+	<h1>Introduction to Drupal8</h1>
 
     <p><a href="http://www.gregboggs.com/ ">http://www.gregboggs.com/</a> - @gregory_boggs</p>
-    <p>Conference hashtag: <a href="https://twitter.com/hashtag/devsigner?src=hash">#devsigner</a></p>
-    <p>Session evaluation: <a href="http://devsignercon.com/eval">devsignercon.com/eval</a></p>
+    <p>Training evaluation: <a href="https://assoc.drupal.org/global-training-days-survey-attendees">Feedback</a></p>
 	<p class="attribution">By Greg Boggs</p>
 </header>
 
 <section>
     <header class="slide">
-        <h1>What are some problems when building websites with WordPress or Drupal?</h1>
+        <h1>Meet the Drupal Association</h1>
     </header>
 
     <section class="slide">
-        <h2>Lets make a list!</h2>
-        <p class="delayed">No really, please help!</p>
-        <p>mySQL deadlock on cache table</p>
-        <p>Anything goes wrong with the database, suddenly you don't have a website</p>
-        <p>PDO exception error</p>
-        <p>Performance, speed</p>
-        <p>Cache invalidation</p>
-        <p>Impose a way of thinking, Drupal wants to be a community website, WP wants to be a blog</p>
-        <p>Bigger hosting requirements, good database, complex hosting</p>
-        <p>They incur technical debt right out of the box</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LZWqFSMul84" frameborder="0" allowfullscreen></iframe>
     </section>
 </section>
 
 <section>
-	<header class="slide">
-		<h1>What is a static website?</h1>
-	</header>
-	
 	<section class="slide">
-		<h2>Static Website Generator</h2>
-        <p>A static generator does the building when you create your content. Write once. Read many times.
-            <a href="http://gohugo.io/overview/introduction/">Learn More ></a>
-        </p>
-        <p>A generator you may have heard of is called <a href="http://jekyllrb.com/">Jekyll</a>. I like <a href="http://gohugo.io/">Hugo</a>.
-            It's like WordPress. Except it's fast, won't be hacked, and doesn't need security updates.</p>
-        <p>We seriously need to <a href="https://en.wikipedia.org/wiki/Static_web_page">update Wikipedia</a>.</p>
+        <h2>Supporting Organizations</h2>
+        <h3>ThinkShout</h3>
+        <p>A recognized leader in Drupal development</p>
+        <h3>Pantheon</h3>
+        <p>Website management platform for Drupal and WordPress</p>
 	</section>
 </section>
 <section>
     <section class="slide">
-        <h2>Static Advantages</h2>
+        <h2>The Plan</h2>
         <ul>
-            <li class="delayed">Very, very fast</li>
-            <li class="delayed">Extremely secure</li>
-            <li class="delayed">Efficient to develop with</li>
-            <li class="delayed">Easy to learn</li>
-            <li class="delayed">Easy to edit</li>
-            <li class="delayed">Easy to host</li>
+            <li>An introduction to CMS and Drupal</li>
+            <li>File management and databases</li>
+            <li>Site building basics with content types, fields, and views</li>
+            <li>Installation of modules and themes</li>
+            <li>Introduction to Drupal 8 theming with Twig templates</li>
+            <li>Drupal 8 configuration management</li>
+            <li>Hook basics</li>
         </ul>
     </section>
 </section>
 <section>
     <header class="slide">
-        <h1>Let's define the common pieces.</h1>
+        <h1>What is a CMS?</h1>
     </header>
 
     <section class="slide">
+        <h2>Drupal 8 features</h2>
         <ul>
-            <li>Markdown, Markdown, Markdown <a href="http://daringfireball.net/projects/markdown/">More ></a></li>
-            <li class="delayed">Git version control</li>
-            <li class="delayed">Metadata usually in Yaml. <code>author: Greg Boggs</code></li>
-            <li class="delayed">Plain HTML files, just like 1997, but without the capslock.</li>
-            <li class="delayed">A template language like Twig, Mustache, or Slim*</li>
-            <li class="delayed">Command line tools</li>
-            <li class="delayed">Free, open-source software</li>
+            <li>Community built and supported</li>
+            <li>Multilingual</li>
+            <li>Great site search*</li>
+            <li>Responsive first</li>
+            <li>Improved editing - Edit in place</li>
+            <li>Site builders experience</li>
+            <li>Fast by Default</li>
+            <li>Modern template system</li>
+            <li>Object-oriented framework</li>
+            <li>Proudly found elsewhere</li>
         </ul>
-        <p class="delayed">* Thanks Marlene!</p>
+    </section>
+</section>
+<section>
+    <section class="slide">
+        <h2>New Words</h2>
+        <li>Module</li>
+        <li>Theme</li>
+        <li>Node</li>
+        <li>Region</li>
+        <li>Block</li>
+        <li>Taxonomy</li>
+        <li>Field</li>
+        <li>Template</li>
+        <li>Hook*</li>
     </section>
 </section>
 <section>
     <header class="slide">
-        <h1>Ok, let's look at some code.</h1>
+        <h1>Lets Install Drupal</h1>
     </header>
-
     <section class="slide">
-        <p>Print variables:</p>
-        <code>{{ .Site.Params.Author }}</code>
-        <p>Use conditions:</p>
-        <code>{{ if ne .Description "" }}{{ .Description }}{{end}}</code>
-        <p>Repeat yourself:</p>
-        <code>	{{ range first 5 .Site.Recent }}</code>
+        <h2>Browse the Basics</h2>
+        <p>Click "content"</p>
+        <p>Click configuration -> Site settings</p>
+        <p>Click Structure -> Content Types</p>
+        <p>Click Users</p>
+        <p>Click Appearance -> themes</p>
+        <p>Click modules</p>
+        <p>Click Translation</p>
     </section>
+</section>
+<section class="slide">
+	<h2>Fields</h2>
+    <p>Add 4 field types to Article.</p>
+    <p>Manage Form</p>
+    <p>Manage Display</p>
+    <p>Create then edit 4 sample nodes with images</p>
+</section>
+<section class="slide">
+    <h2>Blocks</h2>
+    <p>Create a Block</p>
+    <p>Create a custom block with fields</p>
+    <p>Place a Block</p>
 </section>
 <section>
-    <header class="slide">
-        <h1>Static websites are for prototypes.</h1>
-    </header>
-
-    <section class="slide">
-        <p>Sure, blogs are easy - comments, pagination, archives...</p>
-        <p>What else you got?</p>
-        <ul>
-            <li class="delayed">Great site search with <a href="http://lunrjs.com/">Lunr</a>.</li>
-            <li class="delayed">Quick and easy forms with <a href="http://formspree.io/">Formspree</a>.</li>
-            <li class="delayed">Event calendar with <a href="http://fullcalendar.io/">FullCalendar</a>.</li>
-            <li class="delayed">Yes, even commerce with <a href="http://simplecartjs.org/">simpleCart</a>.</li>
-            <li class="delayed">Content modelling "CMS" with <a href="https://www.contentful.com/">Contentful</a>.</li>
-        </ul>
-    </section>
-    <section class="slide">
-        <h2>So, when should I use a CMS?</h2>
-        <p>Logged in websites</p>
-        <p>User generated content</p>
-        <p>Websites over 600,000 pages</p>
-    </section>
+    <h2>Views</h2>
+    <p>Create a simple page view</p>
+    <p>table it</p>
+    <p>Render it</p>
+    <p>Filter it</p>
+    <p>Expose it</p>
+    <p>Expose as block and place it</p>
 </section>
-<footer class="slide">
-	<h2>Thank you!</h2>
-    <p>Conference hashtag: <a href="https://twitter.com/hashtag/devsigner?src=hash">#devsigner</a></p>
-    <p>Session evaluation: <a href="http://devsignercon.com/eval">devsignercon.com/eval</a></p>
-    <p class="attribution">
-        Static slides made possible by
-        <a href="http://lea.verou.me/2010/10/my-ft2010-slides-and-csss-my-presentation-framework/">Lea Verou</a>
-    </p>
-</footer>
-
+<section>
+    <h2>Modules and Themes</h2>
+</section>
+<section>
+    <h2>Twig Templates</h2>
+</section>
+<section>
+    <h2>Lets Code</h2>
+</section>
 <script src="slideshow.js"></script>
 
 <!-- Uncomment the plugins you need
