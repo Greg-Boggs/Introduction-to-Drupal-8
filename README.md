@@ -1,9 +1,9 @@
-# state-of-static
-<a href="http://www.devsignercon.com/conference/sessions/state-static">The State of Static</a> is a talk I gave at 
-Devsignercon 2015 exploring the possibilities with static websites.
+# Introduction to Drupal 8
 
+This is an introduction to Drupal 8 for people with no previous Drupal experience. Most of the content is a checklist for site building exercises.
 
-Slideshow made using CSSS
+Slideshow made using CSSS by <a href="http://lea.verou.me/">Lea Verou</a>.
+
 CSS-based SlideShow System
 
 Warning: Only works in latest Firefox, Opera, Safari or Chrome. For more information, see the <a href="http://lea.verou.me/csss/sample-slideshow.html">sample slideshow</a>.
